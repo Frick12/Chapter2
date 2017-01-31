@@ -31,7 +31,7 @@ public class TestingJava3 {
 			
 			System.out.print("Please enter your third number >>>>> ");
 			num4 = inputDevice.nextInt();
-			inputDevice.nextLine();
+			
 			
 			answer = num1 + num2 + num3 + num4;
 			
