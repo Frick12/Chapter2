@@ -15,7 +15,7 @@ public class Eggs
 		int numEggsRemainder;
 		double totalCost;
 		
-		orderedString = JOptionPane.showInputDialog(null, "How many eggs would you like?", JOptionPane.QUESTION_MESSAGE);
+		orderedString = JOptionPane.showInputDialog(null, "How many eggs would you like?","", JOptionPane.QUESTION_MESSAGE);
 		numEggsOrdered = Integer.parseInt(orderedString);
 		
 		numDozenOrdered = numEggsOrdered/dozen;

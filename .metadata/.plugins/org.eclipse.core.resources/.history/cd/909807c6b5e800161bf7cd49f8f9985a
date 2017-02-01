@@ -1,0 +1,34 @@
+package nauticalMiles;
+
+import javax.swing.JOptionPane;
+
+public class NauticalMiles 
+{
+
+	public static void main(String[] args) 
+	{
+		double numKilo = 1.852;
+		double numOfMiles = 1.50779;
+		double convertNumKilo;
+		double convertNumMiles;
+		double inputNM;
+		
+		String NMString;
+		
+		NMString = JOptionPane.showInputDialog(null, "How many Nautical Miles?", JOptionPane.QUESTION_MESSAGE);
+		inputNM = parseInt(NMString);
+		
+		convertNumKilo = numKilo * inputNM;
+		convertNumMiles = numOfMiles * inputNM;
+		
+		JOptionPane.showMessageDialog(null, inputNM + " Nautical Miles is the same distance as " + convertNumMiles + " miles and " + convertNumKilo + 
+				" kilometers.", NMString, JOptionPane.INFORMATION_MESSAGE, null);
+		
+	}
+
+	private static double parseInt(String nMString) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

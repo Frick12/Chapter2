@@ -1,0 +1,27 @@
+package gameZone;
+
+import javax.swing.JOptionPane;
+
+public class RandomGuess 
+{
+
+	public static void main(String[] args) 
+	{
+		 String guessString;
+		 int random;
+		 int guess;
+		 final int MIN = 1;
+		 final int MAX = 2;
+		 boolean isMatch;
+		 
+		 random = MIN + (int)(Math.random() * MAX);
+		 
+		 guessString = JOptionPane.showInputDialog(null, "Guess a number between " + MIN + " and " + MAX + " Random guess.", 
+				 "", JOptionPane.INFORMATION_MESSAGE);
+		 
+		 guess = Integer.parseInt(guessString);
+		 
+		 isMatch = guess == random; 
+	}
+
+}

@@ -1,0 +1,13 @@
+package gameZone;
+
+import javax.swing.JOptionPane;
+
+public class RandomGuess 
+{
+
+	public static void main(String[] args) 
+	{
+		
+	}
+
+}
